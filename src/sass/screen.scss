@@ -1,62 +1,70 @@
 /* Your styles (and Sass) start here */
 
-/*** Example styles ***/
+html {
+  font-size: 16px;
+}
+
 body {
-  background: #36a1d9;
+  background-color: #333;
+  color: #fff;
+  font-family: Helvetica, sans-serif;
+  padding: 25px;
+  text-align: center;
 }
 
 h1 {
-  // Transition: Used for hover effect
-  transition: all 3s ease-out;
-
-  // Animation: Used with the keyframes below
-  animation: pulsate 8s ease-out infinite;
-
-  // Normal stylin'
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-  margin: 0;
-
-  font-family: Helvetica, Arial, Sand-serif;
-  font-weight: bold;
-  font-size: 6em;
-  color: white;
-  color: rgba(255,255,255,0.8);
-
-  text-align: center;
-  text-transform: uppercase;
-
+  font-size: 2em;
+  font-weight: 800;
 }
 
-h1:hover {
-  color: #5cefaf;
+div {
+  width: 100%;
+  margin: 15px 0;
 }
 
-/*** Keyframes - used with the "animation" property in the h1 ***/
 
-@keyframes pulsate {
-  0%, 20% {
-    transform: translate(-50%, -50%) scale(1);
-    filter: blur(5px);
-  }
-  50%, 70% {
-    transform: translate(-50%, -50%) scale(1.5);
-    filter: none;
-  }
-  100% {
-    transform: translate(-50%, -50%) scale(1);
-    filter: blur(5px);
-  }
+
+.module__top {
+  margin-bottom: 25px;
+  background-color: #f38a6d;
 }
 
-/*** Media queries for adjusting to different screen sizes ***/
-
-@media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 2em;
-  }
+.module__bottom {
+  margin-top: 50px;
+  background-color: #3bbfef;
 }
 
+
+
+/* Add padding to the parent */
+.padding {
+    padding: 1px 0;
+}
+
+
+/* **************************************** */
+/* COLORS */
+/* **************************************** */
+.red {
+    background-color: #ff6b6b;
+}
+
+.orange {
+    background-color: #ff9e2c;
+}
+
+.yellow {
+    background-color: #eeee78;
+}
+
+.green {
+    background-color: #4ecd9d;
+}
+
+.blue {
+    background-color: #4e97cd;
+}
+
+.purple {
+    background-color: #6c4ecd;
+}
